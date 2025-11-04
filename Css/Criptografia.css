@@ -1,0 +1,45 @@
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      resize: vertical;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: monospace;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #0078d7;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #0078d7;
+      padding-bottom: 5px;
+    }
