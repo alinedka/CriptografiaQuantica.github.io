@@ -48,6 +48,7 @@
     <h2>Criptografar (Texto → Binário)</h2>
     <textarea id="textoNormal" placeholder="Digite o texto que deseja criptografar..."></textarea>
     <button id="btnCriptografar">Criptografar</button>
+    <button id="btnInterceptar">Interceptar</button>
     <h3>Resultado:</h3>
     <textarea id="resultadoCriptografia" readonly placeholder="Resultado em binário aparecerá aqui..."></textarea>
   </section>
@@ -80,7 +81,19 @@
         const resultado = descriptografia(binario);
         document.getElementById("resultadoDescriptografia").value = resultado;
       });
+      btnInterceptar.addEventListener("click", () => {
+    interceptarMensagem();
+    // opcional: desabilitar o botão para não repetir
+    btnInterceptar.disabled = true;
+    btnInterceptar.textContent = "Interceptado";
+  });
     });
   </script>
+  <footer id="footer">
+     <h1 id="h1-footer">Centro Universitário Senac</h1>
+        <p class="p1-footer">Desenvolvido por Aline Douaki, Guilherme Biribilli, Mateus Borba, William Takahashi</p>
+    </footer>
+
+  
 </body>
 </html>
